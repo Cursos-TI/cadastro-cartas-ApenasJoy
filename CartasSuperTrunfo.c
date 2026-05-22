@@ -64,6 +64,8 @@ int main() {
     densidade1 = populacao1/area1;
     densidade2 = populacao2/area2;
 
+    pib1 *= 1000000000;
+    pib2 *= 1000000000;
     capita1 = pib1/(float)populacao1;
     capita2 = pib2/(float)populacao2;
   
@@ -81,7 +83,7 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turisticos: %d \n", turisticos1);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
-    printf("PIB per Capita: %.8f reais\n", capita1);
+    printf("PIB per Capita: %.2f reais\n", capita1);
 
     //Exibindo os dados da Segunda Carta
 
@@ -95,7 +97,7 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turisticos: %d \n", turisticos2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
-    printf("PIB per Capita: %.8f reais\n", capita2);
+    printf("PIB per Capita: %.2f reais\n", capita2);
     
     return 0;
 } 
